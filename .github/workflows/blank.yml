@@ -27,9 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: clone mesa
-        run: | 
-          rm -rf /home/box64
-          git clone https://github.com/ptitSeb/box64 /home
+        run: |
+          git clone https://github.com/ptitSeb/box64 ~
           
       - name: Push changes to GitHub Repository
         run: |
